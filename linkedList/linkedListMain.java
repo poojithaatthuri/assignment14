@@ -3,31 +3,27 @@ package linkedList;
 ;
 
 public class linkedListMain {
-
-
-    public static void main(String[] args) {
-
-    }
-
     linkedListMain list = new linkedListMain();
 
-        public void push(Object data) {
-            list.addFirst(data);
-        }
-
-    private void addFirst(Object data) {
-
+    public void enQueue(Object data) {
+        list.addLast(data);
     }
 
-    public void pop() {
-            list.deleteFirst();
-        }
+    void addLast(Object data) {
+    }
 
-    private void deleteFirst() {
+    public void deQueue() {
+        list.deleteFirst();
+    }
+
+    void deleteFirst() {
     }
 
     public void display() {
-            list.display();
-        }
-
+        list.display();
     }
+
+}
+
+
+    
